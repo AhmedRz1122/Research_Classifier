@@ -26,7 +26,10 @@ const DrawerContent = (props) => {
             <Icon name="info" color={color} size={size} />
           )}
           label="About"
-          onPress={() => props.navigation.navigate('About')}
+          onPress={() => {
+            console.log('Navigating to About...');
+            props.navigation.navigate('About');
+          }}
         />
         <DrawerItem
           icon={({ color, size }) => (

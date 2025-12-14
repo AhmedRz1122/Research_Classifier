@@ -9,8 +9,8 @@ from PIL import Image
 class_names = [
     'butterfly',
     'cat',
-    'cow',
     'chicken',
+    'cow',
     'dog',
     'elephant',
     'horse',

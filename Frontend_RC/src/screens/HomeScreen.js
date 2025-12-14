@@ -51,7 +51,7 @@ const getAnimalColor = (className) => {
   return colorMap[className?.toLowerCase()] || '#4F46E5';
 };
 
-const HomeScreen = () => {
+const HomeScreen = ({ navigation }) => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [classification, setClassification] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -189,27 +189,60 @@ const HomeScreen = () => {
             </View>
 
             <View style={styles.drawerContent}>
-              <TouchableOpacity style={styles.drawerItem}>
+              <TouchableOpacity 
+                style={styles.drawerItem}
+                onPress={() => {
+                  toggleDrawer();
+                  // Already on Home screen
+                }}
+              >
                 <Icon name="home" size={24} color="#4F46E5" />
                 <Text style={styles.drawerItemText}>Home</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.drawerItem}>
+              <TouchableOpacity 
+                style={styles.drawerItem}
+                onPress={() => {
+                  toggleDrawer();
+                  // Navigate to Dataset screen when implemented
+                  Alert.alert('Coming Soon', 'Dataset view will be available soon!');
+                }}
+              >
                 <Icon name="folder" size={24} color="#4F46E5" />
                 <Text style={styles.drawerItemText}>Dataset</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.drawerItem}>
+              <TouchableOpacity 
+                style={styles.drawerItem}
+                onPress={() => {
+                  toggleDrawer();
+                  // Navigate to Statistics screen when implemented
+                  Alert.alert('Coming Soon', 'Statistics view will be available soon!');
+                }}
+              >
                 <Icon name="bar-chart" size={24} color="#4F46E5" />
                 <Text style={styles.drawerItemText}>Statistics</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.drawerItem}>
+              <TouchableOpacity 
+                style={styles.drawerItem}
+                onPress={() => {
+                  toggleDrawer();
+                  // Navigate to Settings screen when implemented
+                  Alert.alert('Coming Soon', 'Settings will be available soon!');
+                }}
+              >
                 <Icon name="settings" size={24} color="#4F46E5" />
                 <Text style={styles.drawerItemText}>Settings</Text>
               </TouchableOpacity>
 
-              <TouchableOpacity style={styles.drawerItem}>
+              <TouchableOpacity 
+                style={styles.drawerItem}
+                onPress={() => {
+                  toggleDrawer();
+                  navigation.navigate('About');
+                }}
+              >
                 <Icon name="info" size={24} color="#4F46E5" />
                 <Text style={styles.drawerItemText}>About</Text>
               </TouchableOpacity>
@@ -331,7 +364,7 @@ const HomeScreen = () => {
                   <View style={styles.infoBox}>
                     <Icon name="check-circle" size={20} color="#10B981" />
                     <Text style={styles.infoText}>
-                    You can save Image for the dataset collection for future research
+                    Save Image for the dataset collection for future research
                     </Text>
                   </View>
 
@@ -362,7 +395,7 @@ const styles = StyleSheet.create({
     paddingBottom: 80,
   },
   title: {
-    fontSize: 32,
+    fontSize: 30,
     fontWeight: 'bold',
     color: '#333',
     marginBottom: 10,

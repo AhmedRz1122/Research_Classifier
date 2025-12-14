@@ -60,7 +60,7 @@ const SignupScreen = ({ navigation }) => {
     if (validateForm()) {
       // TODO: Implement Signup Logic
       Alert.alert('Success', 'Account created successfully!');
-      navigation.replace('CustomerHome');
+      navigation.replace('Research Classifier');
     }
   };
 
@@ -120,7 +120,7 @@ const SignupScreen = ({ navigation }) => {
           
           {/* Logo */}
           <Image
-            source={require('../../assets/images/Theme_img.png')}
+            source={require('../../assets/images/Main_image.png')}
             style={styles.logo}
             resizeMode="contain"
           />
