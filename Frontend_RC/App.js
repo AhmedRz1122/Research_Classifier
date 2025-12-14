@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LoginScreen from './src/screens/LoginScreen';
 import SignupScreen from './src/screens/SignupScreen';
-import CameraCaptureScreen from './src/screens/CameraCaptureScreen';
+import CameraCaptureScreen from './src/screens/HomeScreen';
 import UploadScreen from './src/screens/UploadScreen';
 
 const Stack = createNativeStackNavigator();

@@ -124,7 +124,6 @@ logs/
 *.hdf5
 *.model
 *.pt
-*.pth
 *.onnx
 *.keras
 *.tflite
