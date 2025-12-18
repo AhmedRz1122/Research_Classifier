@@ -4,7 +4,8 @@ A research-oriented animal image classification project built to support future 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/bbd377d2-1b6e-46fa-a2ce-9ff68324fab7" width="45%" />
-  <img src="https://github.com/user-attachments/assets/77c90de3-a60a-41fd-8433-6a04aa1b0472" width="45%" />
+  <img src="https://github.com/user-attachments/assets/eb4d8c7f-ec4b-455b-a93e-8b349ddebcc3" width="45%" />
+
 </p>
 
 ---
