@@ -22,6 +22,7 @@ wheels/
 MANIFEST
 model/
 model/**
+model/**/**
 # PyInstaller
 *.manifest
 *.spec
@@ -122,6 +123,7 @@ logs/
 *.pickle
 *.joblib
 *.h5
+*.pth
 *.hdf5
 *.model
 *.pt
