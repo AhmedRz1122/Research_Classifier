@@ -20,7 +20,8 @@ wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
+model/
+model/**
 # PyInstaller
 *.manifest
 *.spec
