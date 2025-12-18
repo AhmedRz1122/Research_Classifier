@@ -29,13 +29,14 @@ The goal is not only classification but also **data collection for research purp
 
 ---
 
-## 📊 Performance
+## 📊 Training & Validation Accuracy
 
-| Metric   | Value |
-|----------|-------|
-| Accuracy | **XX%** |
-
-> 🔹 *Replace `XX%` with the final accuracy value obtained from the training notebook.*
+| Metric | Value |
+|------|-------|
+| Train Accuracy | 95.91% |
+| Validation Accuracy | **96.10%** |
+| Train Loss | 0.1313 |
+| Validation Loss | 0.1440 |
 
 ---
 
