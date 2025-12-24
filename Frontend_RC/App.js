@@ -6,6 +6,9 @@ import SignupScreen from './src/screens/SignupScreen';
 import CameraCaptureScreen from './src/screens/HomeScreen';
 import UploadScreen from './src/screens/UploadScreen';
 import AboutScreen from './src/components/About';
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const Stack = createNativeStackNavigator();
 
@@ -21,4 +24,4 @@ export default function App() {
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+};
