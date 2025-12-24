@@ -20,7 +20,7 @@ The goal is not only classification but also **data collection for research purp
 
 | Component        | Details |
 |------------------|---------|
-| Model Architecture | EfficientNet |
+| Model Architecture | EfficientNet-B0 |
 | Dataset           | Animal-10 |
 | Number of Classes | 10 |
 | Framework         | PyTorch |
